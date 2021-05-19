@@ -1,0 +1,517 @@
+/* Site Style Sheet
+    1. Global Styles
+    2. Structure Styles
+    3. Typography Styles
+    4. Module Styles
+    5. Component Styles
+
+================================ */
+
+/* 1. Global Styles 
+================================ */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-normal: 1rem;
+    --text-sub-heading: 1.5rem;
+    --text-heading: 1.75rem;
+    --text-subtitle: 2.5rem;
+    --text-title: 3rem;
+    --coconut-white: #E9EDF6;
+    --dark-steel-blue: #294056;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: var(--coconut-white);
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -website-font-smoothing: antialiased;
+}
+
+/* 2. Structural Styles 
+================================ */
+header {
+    width: 100%;
+    background-color: steelblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px -3px 22px 1px var(--dark-steel-blue);
+}
+
+header * {
+    display: inline;
+}
+
+#page-title {
+    color: var(--coconut-white);
+    margin: 2rem 0 2rem 4rem;
+}
+
+main {
+    background-color: var(--coconut-white);
+    width: 70%;
+    margin: 130px auto;
+}
+
+section {
+    margin: 3rem auto;
+}
+
+.sub-group {
+    background-color: #FFF;
+    border: 2px solid var(--dark-steel-blue);
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+footer {
+    background-color: steelblue;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: var(--coconut-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3. Typography Styles 
+================================ */
+h1, h2, h3, h4 {
+    color: var(--dark-steel-blue);
+}
+
+h1 {
+    font-size: var(--text-title);
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: var(--text-subtitle);
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: var(--text-heading);
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: var(--text-sub-heading);
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+p {
+    font-size: var(--text-normal);
+}
+
+/* 4. Module Styles 
+================================ */
+
+/* Site Navigation */
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Colors */
+.color-block-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+}
+
+.color-block {
+    width: 25vh;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-name, .color-code {
+    color: black;
+}
+
+/* Fonts */
+.font-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.font-block {
+    border: 2px solid var(--dark-steel-blue);
+    width: 30vh;
+    height: 30vh;
+    margin: auto;
+    padding: 1rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Text Styles */
+.text-style-list {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Buttons */
+
+/* Shapes */
+.shape-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+/* 5. Component Styles 
+================================ */
+/* Navigation Buttons */
+.button-nav {
+    color: var(--dark-steel-blue);
+    background-color: var(--coconut-white);
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 2px solid var(--dark-steel-blue);
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--text-normal);
+    font-weight: bold;
+}
+
+a:hover {
+    box-shadow: inset 0.5em 0.5em 20px var(--dark-steel-blue);
+}
+
+/* Color Blocks */
+.neon-pink {
+    background-color: #FF6EC7;
+}
+
+.neon-yellow {
+    background-color: #FAED27;
+}
+
+.neon-green {
+    background-color: #39FF14;
+}
+
+.neon-purple {
+    background-color: #C724B1;
+}
+
+.light-gray {
+    background-color: #D9D9D9;
+}
+
+.medium-gray {
+    background-color: #929292;
+}
+
+.dark-gray {
+    background-color: #606060;
+}
+
+.very-dark-gray {
+    background-color: #333333;
+}
+
+.dark-bkg {
+    color: #FFFFFF;
+}
+
+.lavender {
+    background-color: #B2A4D0;
+}
+
+.prism-pink {
+    background-color: #EEA5C5;
+}
+
+.illuminating {
+    background-color: #F3E04E;
+}
+
+.placid-blue {
+    background-color: #8DACD3;
+}
+
+.skydiver {
+    background-color: #1F609E;
+}
+
+.peacock-blue {
+    background-color: #00A4B7;
+}
+
+.fruit-dove {
+    background-color: #D36480;
+}
+
+/* Font Styles */
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.quattrocento {
+    font-family: 'Quattrocento', serif;
+}
+
+.old-standard {
+    font-family: 'Old Standard TT', serif;
+}
+
+.vollkorn {
+    font-family: 'Vollkorn', serif;
+}
+
+/* Text Styles */
+.article-text {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.caption {
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.pull-quote {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Shapes */
+.shape-name {
+    text-align: center;
+}
+
+.circle {
+    background-color: steelblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.oval {
+    background-color: steelblue;
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.rounded-square {
+    background-color: steelblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+}
+
+.square {
+    background-color: steelblue;
+    height: 100px;
+    width: 100px;
+}
+
+.rectangle {
+    background-color: steelblue;
+    height: 100px;
+    width: 200px;
+}
+
+.trapezoid {
+    border-bottom: 100px solid steelblue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 200px;
+}
+
+.parallelogram {
+    background-color: steelblue;
+    width: 150px;
+    height: 100px;
+    transform: skew(25deg);
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid steelblue;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid steelblue;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid steelblue;
+    border-bottom: 50px solid transparent;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid steelblue;
+    border-bottom: 50px solid transparent;
+}
+
+.triangle-top-left {
+    width: 0;
+    height: 0;
+    border-top: 100px solid steelblue;
+    border-right: 100px solid transparent;
+}
+
+.triangle-top-right {
+    width: 0;
+    height: 0;
+    border-top: 100px solid steelblue;
+    border-left: 100px solid transparent;
+}
+
+.triangle-bottom-left {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid steelblue;
+    border-right: 100px solid transparent;
+}
+
+.triangle-bottom-right {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid steelblue;
+    border-left: 100px solid transparent;
+}
+
+.star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: steelblue;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid steelblue;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+.star-five:before {
+    border-bottom: 80px solid steelblue;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+}
+
+.star-five:after {
+    position: absolute;
+    display: block;
+    color: steelblue;
+    top: 3px;
+    left: -105px;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid steelblue;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: "";
+}
+
+.heart {
+    position: relative;
+    width: 200px;
+    height: 180px;
+}
+
+.heart:before, .heart:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 160px;
+    background: steelblue;
+    border-radius: 100px 100px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
